@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayberk | Software Engineering Portfolio</title>
+    <!-- Modern Tech-Oriented Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- SEO Tags -->
+    <meta name="description"
+        content="Portfolio of Ayberk, a Software Engineering student passionate about OOP, Algorithms, and Software Architecture.">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo"><span>&lt;</span>A<span>&gt;</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">About</a></li>
+                <li><a href="#projects">GitHub</a></li>
+                <li><a href="#skills" class="nav-cv-highlight">CV</a></li>
+                <li><a href="#contact">LinkedIn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Home / About Me -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting"><i class="fa-solid fa-terminal"></i> print("Hello, I'm");</p>
+                <h1 class="name">Ayberk</h1>
+                <h2 class="role">Software Engineering Student</h2>
+                <div class="lang-toggle-container">
+                    <button id="about-lang-toggle" class="btn btn-outline btn-sm">
+                        <i class="fa-solid fa-language"></i> <span id="lang-toggle-text">Türkçe Oku</span>
+                    </button>
+                </div>
+                <div class="bio-container">
+                    <p class="bio" id="bio-en">
+                        Hello, I'm <strong>Ayberk</strong>, a second-year Software Engineering student. Beyond just
+                        keeping up with the rapid
+                        pace of technology, I aim to be a part of its evolution. I built this portfolio to transform my
+                        theoretical knowledge in areas like <strong>C++, Python, Web Development, and AI</strong> into
+                        <em>real-world projects</em>.
+                        Keep scrolling to explore my skills and the projects I've been working on.
+                    </p>
+
+                    <p class="bio" id="bio-tr" style="display: none;">
+                        Merhaba, ben <strong>Ayberk</strong>, ikinci sınıf Yazılım Mühendisliği öğrencisiyim. Sadece
+                        teknolojinin hızlı gelişimine ayak uydurmakla kalmayıp, onun evriminin bir parçası olmayı
+                        hedefliyorum. Bu portfolyoyu, <strong>C++, Python, Web Geliştirme ve Yapay Zeka</strong> gibi
+                        alanlardaki teorik bilgilerimi <em>gerçek dünya projelerine</em> dönüştürmek amacıyla
+                        hazırladım.
+                        Yeteneklerimi ve üzerinde çalıştığım projeleri incelemek için aşağı kaydırabilirsiniz.
+                    </p>
+                </div>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- When you add your photo, save it as "profile.jpg" in the same folder -->
+                    <img src="profile.jpg" alt="Ayberk Profile" class="profile-pic" onerror="this.style.display='none'"
+                        width="400" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. GitHub / Projects -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Highlight Project -->
+                <div class="project-card highlight-card">
+                    <div class="card-content">
+                        <div class="project-icon"><i class="fa-solid fa-user"></i></div>
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Showcasing
+                            skills, projects, and professional background with a clean, tech-oriented design.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/AyberkCerit?tab=overview&from=2026-03-01&to=2026-03-18"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fa-brands fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github-cta">
+                <a href="https://github.com/AyberkCerit?tab=overview&from=2026-03-01&to=2026-03-18" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fa-brands fa-github"></i> Explore All on GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. CV / Skills -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-container">
+                <!-- Skills Category 1 -->
+                <div class="skill-category">
+                    <h3>Core Languages</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <i class="fa-brands fa-cuttlefish"></i>
+                            <div>
+                                <strong>C++</strong>
+                                <span>Advanced OOP, Memory Management</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-python"></i>
+                            <div>
+                                <strong>Python</strong>
+                                <span>Scripting, Prototyping, Data, AI development</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js"></i>
+                            <div>
+                                <strong>JavaScript & HTML/CSS</strong>
+                                <span>Frontend UI/UX Implementation</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Skills Category 2 -->
+                <div class="skill-category">
+                    <h3>Computer Science</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <i class="fa-solid fa-cubes"></i>
+                            <div>
+                                <strong>Object-Oriented Programming</strong>
+                                <span>SOLID Principles, Clean Code</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-sitemap"></i>
+                            <div>
+                                <strong>Data Structures & Algorithms</strong>
+                                <span>Graphs, Trees, Complexity Analysis</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            <div>
+                                <strong>Design Patterns</strong>
+                                <span>Singleton, Factory, Observer</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-download-container">
+                <a href="resume.pdf" target="_blank" class="btn btn-primary btn-cv-download">
+                    <i class="fa-solid fa-file-pdf"></i> Download Full Resume
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. LinkedIn / Network -->
+        <section id="contact" class="contact">
+            <div class="contact-box">
+                <h2 class="section-title center-title">Let's
+                    Connect</h2>
+                <p class="contact-text">
+                    I'm looking for internship opportunities and I'm open to discussing software architecture and
+                    exciting technologies. Thank you for your time.
+                </p>
+                <div class="network-links">
+                    <a href="https://www.linkedin.com/in/ayberk-cerit-4707a12a4/" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i> Connect on LinkedIn
+                    </a>
+                    <a href="mailto:[A2407231005@gmail.com]" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i> Send an Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Ayberk.</p>
+            <div class="socials">
+                <a href="https://github.com/AyberkCerit?tab=overview&from=2026-03-01&to=2026-03-18"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ayberk-cerit-4707a12a4/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
